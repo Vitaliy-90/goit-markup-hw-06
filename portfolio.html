@@ -232,8 +232,39 @@
                             </svg></a></li>
                 </ul>
             </div>
+
+
+            <form class="footer-form">
+                <label for="footer-email" class="footer-mail">Subscribe</label>
+                <div class="footer-mail-form">
+                    <input type="email" name="email" class="footer-mail-input" id="footer-email" placeholder="E-mail">
+                    <button type="submit" class="form-btn">Subscribe
+                        <svg class="footer-form-svg" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-Frame"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
         </div>
     </footer>
+    <div class="backdrop is-hidden " data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close class="modal-close">
+                <svg class="modal-close-button">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg></button>
+            <form class="form-modal">
+                <label for="name" class="modal-label">Name</label>
+                <input type="text" name="username" id="name">
+                <label for="tel" class="modal-label">Phone</label>
+                <input type="tel" name="userphone" id="tel">
+                <label for="mail" class="modal-label">Email</label>
+                <input type="email" name="usermail" id="mail">
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
